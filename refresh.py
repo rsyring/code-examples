@@ -8,11 +8,16 @@ ce_dpath = projects_dpath / 'code-examples'
 
 # (source relative to ~/projects, dest relative to this repo)
 copies = [
+    # Agents
+    ('kilo-src/AGENTS.md', 'agents/kilo-agents.md'),
+    ('ynabr-src/AGENTS.md', 'agents/ynabr-agents.md'),
     # Configs
     ('mu-pkg/src/mu/config.py', 'configs/mu-config.py'),
     ('env-config-pkg/src/env_config/config.py', 'configs/env-config-config.py'),
     ('juke-inc-pkg/src/juke/config.py', 'configs/juke-config.py'),
     ('podu-pkg/src/podu/config.py', 'configs/podu-config.py'),
+    # Logging / CLI
+    ('mu-pkg/src/mu/libs/logs.py', 'logs/mu-logs.py'),
     # Utils
     ('juke-inc-pkg/src/juke/libs/utils.py', 'utils/juke-utils.py'),
 ]
