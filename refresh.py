@@ -21,6 +21,7 @@ copies = [
     ('kilo-src/tasks/zor-prep.py', 'cli/zor-prep.py'),
     # Utils
     ('juke-inc-pkg/src/juke/libs/utils.py', 'utils/juke-utils.py'),
+    ('mu-pkg/src/mu/libs/testing.py', 'utils/mu-testing.py'),
 ]
 
 for src_rel, dest_rel in copies:
