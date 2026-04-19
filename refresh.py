@@ -16,8 +16,9 @@ copies = [
     ('env-config-pkg/src/env_config/config.py', 'configs/env-config-config.py'),
     ('juke-inc-pkg/src/juke/config.py', 'configs/juke-config.py'),
     ('podu-pkg/src/podu/config.py', 'configs/podu-config.py'),
-    # Logging / CLI
-    ('mu-pkg/src/mu/libs/logs.py', 'logs/mu-logs.py'),
+    # CLI
+    ('mu-pkg/src/mu/libs/logs.py', 'cli/mu-logs.py'),  # logging integration
+    ('kilo-src/tasks/zor-prep.py', 'cli/zor-prep.py'),
     # Utils
     ('juke-inc-pkg/src/juke/libs/utils.py', 'utils/juke-utils.py'),
 ]
