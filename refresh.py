@@ -19,6 +19,11 @@ copies = [
     # CLI
     ('mu-pkg/src/mu/libs/logs.py', 'cli/mu-logs.py'),  # logging integration
     ('kilo-src/tasks/zor-prep.py', 'cli/zor-prep.py'),
+    # CLI tables
+    ('doist-pkg/src/doist/cli.py', 'cli-tables/doist-cli.py'),
+    # Health checks
+    ('doist-pkg/src/doist/views.py', 'health-checks/doist-views.py'),
+    ('doist-pkg/src/doist_tests/test_views.py', 'health-checks/doist-test-views.py'),
     # Utils
     ('juke-inc-pkg/src/juke/libs/utils.py', 'utils/juke-utils.py'),
     ('mu-pkg/src/mu/libs/testing.py', 'utils/mu-testing.py'),
