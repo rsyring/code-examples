@@ -9,10 +9,12 @@ class TestViews:
         assert resp.text == "'sup yos"
 
     @mock_patch_obj(views, 'actions')
-    def test_hooks_action(sef, m_actions, web):
+    @mock_patch_obj(views, 'checks')
+    def test_hooks_action(sef, m_checks, m_actions, web):
         web.post_json('/hooks', params='foobar')
 
         m_actions.on_webhook.assert_called_once_with('foobar')
+        m_checks.ping_webhook_alive.assert_called_once_with()
 
     def test_healthy_db_ok(self, web):
         resp = web.get('/healthy-db')

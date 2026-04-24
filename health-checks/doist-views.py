@@ -4,7 +4,7 @@ from flask import Blueprint, current_app, request
 import sqlalchemy as sa
 
 from .ext import db
-from .libs import actions, sync
+from .libs import actions, checks, sync
 
 
 log = logging.getLogger(__name__)
@@ -20,6 +20,7 @@ def index():
 def hooks():
     data = request.get_json(silent=True)
     actions.on_webhook(data)
+    checks.ping_webhook_alive()
     return 'ok'
 
 

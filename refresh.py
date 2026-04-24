@@ -27,6 +27,9 @@ copies = [
     # Utils
     ('juke-inc-pkg/src/juke/libs/utils.py', 'utils/juke-utils.py'),
     ('mu-pkg/src/mu/libs/testing.py', 'utils/mu-testing.py'),
+    ('ynabr-src/src/ynabr/libs/utils.py', 'utils/ynabr-utils.py'),
+    # 1Pasword
+    ('ynabr-src/src/ynabr/libs/utils.py', '1pass/ynabr-utils.py'),
 ]
 
 for src_rel, dest_rel in copies:
