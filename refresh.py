@@ -19,8 +19,11 @@ copies = [
     # CLI
     ('mu-pkg/src/mu/libs/logs.py', 'cli/mu-logs.py'),  # logging integration
     ('kilo-src/tasks/zor-prep.py', 'cli/zor-prep.py'),
+    ('lexe-pkg/src/lexe/cli.py', 'cli/lexe-cli.py'),
     # CLI tables
     ('doist-pkg/src/doist/cli.py', 'cli-tables/doist-cli.py'),
+    # Env Config
+    ('skillz-src/src/skillz/libs/env_config.py', 'env-config/skillz-env-config.py'),
     # Health checks
     ('doist-pkg/src/doist/views.py', 'health-checks/doist-views.py'),
     ('doist-pkg/src/doist_tests/test_views.py', 'health-checks/doist-test-views.py'),
