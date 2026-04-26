@@ -1,0 +1,11 @@
+{
+    "dprint.path": "/home/rsyring/.local/share/mise/installs/dprint/latest/dprint",
+    "[markdown]": {
+        "editor.defaultFormatter": "dprint.dprint",
+        "editor.formatOnSave": true
+    },
+    "[toml]": {
+        "editor.defaultFormatter": "dprint.dprint",
+        "editor.formatOnSave": true,
+    }
+}
